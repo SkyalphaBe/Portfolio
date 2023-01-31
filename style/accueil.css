@@ -1,9 +1,19 @@
+*{
+    margin: 0;
+}
+/*-----------------------------------------------------header----------------------------------------------------------*/
+
 .header{
+    position: fixed;
     display: flex;
     align-items: center;
     flex-direction: column;
     font-family: NeueHaasGrotesk, sans-serif;
     letter-spacing:-1px;
+    width: 100%;
+    color: #FFFFFF;
+    background-color: #31E981;
+
 }
 
 .header-content{
@@ -11,7 +21,7 @@
     align-items: center;
     justify-content: space-around;
     width: 100%;
-
+    padding: 1%;
 }
 
 .link{
@@ -24,7 +34,7 @@ a{
     font-family: NeueHaasGrotesk, sans-serif;
     -webkit-appearance: none;
     text-decoration: none;
-    color: black;
+    color: #232020;
     font-weight: bold;
     font-size: 1.5em;
 }
@@ -34,38 +44,121 @@ a{
     border-radius: 15px;
     height: 8px;
     width: 85%;
+    margin-bottom: 10px;
 }
+
+/*-----------------------------------------------------titre----------------------------------------------------------*/
 
 .title{
     display: flex;
     flex-direction: column;
-    padding: 8% 5% 0% 5%;
-    font-family: NeueHaasGroteskBold, sans-serif;
-    font-size: 110px;
-    line-height: 1;
-    letter-spacing:-8px;
-}
-
-.arrow{
-    display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.arrow img{
-    padding-bottom: 2%;
-    padding-top: 7%;
-
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    min-height: 100vh;
+    font-family: NeueHaasGroteskBold, sans-serif;
+    font-size: 10em;
+    line-height: 1;
 }
 
 .title h1{
     margin: 0;
+    color:#232020;
 }
 
-
-.mySelf{
-    padding: 10%;
-    height: 400px;
-    color: #FFFFFF;
+.Portfolio{
     background-color: #31E981;
+  }
+/*-----------------------------------------------------mys----------------------------------------------------------*/
+
+.moi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: #FFFFFF;
+    background-color: #232020;
+    height: 95vh;
+    font-family: NeueHaasGroteskBold, sans-serif;
+}
+
+.moi-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3.5%;
+    height: 100%;
+}
+
+.moi-content h1{
+    font-size: 3.5em;
+}
+
+.moi-text{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.moi img{
+    height: 100%;
+}
+
+.moi p{
+    width: 100%;
+    font-size: x-large;
+}
+/*-----------------------------------------------------Project----------------------------------------------------------*/
+
+.project{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3.5%;
+    background-color: #FFFFFF;
+    height: 81vh;
+}
+
+.project h1{
+    font-family: NeueHaasGrotesk, sans-serif;
+    letter-spacing:-1px;
+    font-size: 3em;
+    margin:  0 0 50px 0;
+}
+/*-----------------------------------------------------card project----------------------------------------------------------*/
+
+.cardSelect{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    height: 100%;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #31E981;
+    font-family: NeueHaasGrotesk, sans-serif;
+    color: #FFFFFF;
+    border-radius: 15px;
+    height: 30em;
+    width: 20em;
+    margin: 10px;
+}
+.card-text{
+    padding: 5%;
+}
+
+.card img{
+    max-height: 100%;
+    max-width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
