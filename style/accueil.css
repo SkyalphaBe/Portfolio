@@ -1,9 +1,27 @@
 *{
     margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    background-color: #F0F1E4;
+}
+
+main{
+    scroll-snap-type: y mandatory;
+    overflow: scroll;
+    flex-grow: 1;
+    position: relative;
+    scroll-behavior: smooth;
 }
 /*-----------------------------------------------------header----------------------------------------------------------*/
 
-.header{
+header{
+    z-index: 1;
     position: fixed;
     display: flex;
     align-items: center;
@@ -11,8 +29,9 @@
     font-family: NeueHaasGrotesk, sans-serif;
     letter-spacing:-1px;
     width: 100%;
-    color: #FFFFFF;
+    color: #F0F1E4;
     background-color: #31E981;
+
 
 }
 
@@ -22,6 +41,12 @@
     justify-content: space-around;
     width: 100%;
     padding: 1%;
+}
+
+.header-content h1{
+    background-color: #232020;
+    padding: 10px;
+    border-radius: 15px;
 }
 
 .link{
@@ -50,6 +75,8 @@ a{
 /*-----------------------------------------------------titre----------------------------------------------------------*/
 
 .title{
+    scroll-snap-align: start;
+    scroll-snap-stop: normal;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -75,13 +102,15 @@ a{
 /*-----------------------------------------------------mys----------------------------------------------------------*/
 
 .moi{
+    scroll-snap-align: start;
+    scroll-snap-stop: normal;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     color: #FFFFFF;
     background-color: #232020;
-    height: 95vh;
+    height: 100vh;
     font-family: NeueHaasGroteskBold, sans-serif;
 }
 
@@ -89,7 +118,8 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 3.5%;
+    padding-left: 3.5%;
+    padding-right: 3.5%;
     height: 100%;
 }
 
@@ -115,44 +145,57 @@ a{
 /*-----------------------------------------------------Project----------------------------------------------------------*/
 
 .project{
+    scroll-snap-align: start;
+    scroll-snap-stop: normal;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: column;
-    padding: 3.5%;
-    background-color: #FFFFFF;
-    height: 81vh;
+    padding: 10% 3.5% 10% 3.5%;
+    background-color: #F0F1E4;
+    min-height: 90vh;
 }
 
 .project h1{
     font-family: NeueHaasGrotesk, sans-serif;
-    letter-spacing:-1px;
     font-size: 3em;
-    margin:  0 0 50px 0;
+}
+.title-projet{
+    margin-bottom: 40px;
 }
 /*-----------------------------------------------------card project----------------------------------------------------------*/
 
 .cardSelect{
+    scroll-snap-align: start;
+    scroll-snap-stop: normal;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin: 0;
-    height: 100%;
 }
 
+.cardSelect a{
+    font-size: 1em;
+}
 .card{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     background-color: #31E981;
     font-family: NeueHaasGrotesk, sans-serif;
-    color: #FFFFFF;
+    color: #F0F1E4;
     border-radius: 15px;
     height: 30em;
     width: 20em;
     margin: 10px;
+    transition: all,0.3s;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 .card-text{
+    padding: 5%;
+}
+
+.card-text h1{
+    font-size: 2em;
     padding: 5%;
 }
 
@@ -161,4 +204,97 @@ a{
     max-width: 100%;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+}
+
+.card p{
+    margin-bottom: 10px;
+}
+
+.GitHub{
+    color: #31E981;
+    position: relative;
+    font-size: 1.5em;
+    -webkit-text-stroke: 0.1vw #232020;
+    text-transform: uppercase;
+}
+.GitHub::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: #F0F1E4;
+    -webkit-text-stroke: 0vw #232020;
+    border-right: 2px solid #F0F1E4;
+    overflow: hidden;
+}
+
+.card:hover{
+    scale: 1.05;
+}
+/*-----------------------------------------------------Compétence---------------------------------------------------------------*/
+.competence{
+    scroll-snap-align: start;
+    scroll-snap-stop: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 3.5%;
+    height: 100vh;
+    width: 100%;
+    background-color: #232020;
+    color: #FFFFFF;
+    font-family: NeueHaasGrotesk, sans-serif;
+}
+
+.competence h1{
+    font-size: 3em;
+}
+
+.wrapperTabs{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+/*-----------------------------------------------------animation page----------------------------------------------------------*/
+
+.tabs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 90vw;
+}
+
+.tabs__label{
+    padding: 10px 16px;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+.tabs__radio{
+    display: none;
+}
+
+.tabs__content{
+    order: 1;
+    width: 100%;
+    border-bottom: 3px solid #dddddd;
+    line-height: 1.5;
+    font-size: 0.9em;
+    display: none;
+}
+
+.tabs__radio:checked+.tabs__label{
+    font-weight: bold;
+    color: #31E981;
+    border-bottom: 2px solid #31E981;
+}
+
+.tabs__radio:checked+.tabs__label+.tabs__content{
+    display: initial;
 }

@@ -6,67 +6,112 @@
     <title>PortFolio Graux François</title>
 </head>
 <body>
-    <section class="header">
+    <header>
         <div class="header-content">
             <h1>François Graux</h1>
             <div class="link">
-                <a href="">Moi</a>
-                <a href="">Projets</a>
-                <a href="">Compétences</a>
+                <a href="#me">Moi</a>
+                <a href="#project">Projets</a>
+                <a href="#competence">Compétences</a>
             </div>
         </div>
-    </section>
-    <section class="title">
-        <div>
-            <h1>My.</h1>
-            <h1 class="Portfolio">Portfolio.</h1>
-        </div>
-    </section>
-    <section class="moi">
-        <img src="img/francois.JPG" alt="">
-        <div class="moi-content">
-            <h1>Moi</h1>
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est ullamcorper eget nulla facilisi etiam dignissim diam quis enim. Blandit cursus risus at ultrices mi tempus imperdiet nulla.</p>
-        </div>
-    </section>
-    <section class="project">
-        <h1>Mes projets</h1>
-        <div class="cardSelect">
-            <div class="card">
-                <img src="img/img-temp-card.jpg">
-                <div class="card-text">
-                    <p>date</p>
-                    <h1>BUT-Website</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est ullamcorper eget nulla facilisi etiam dignissim diam quis enim. Blandit cursus risus at ultrices mi tempus imperdiet nulla.</p>
+    </header>
+    <main>
+        <section class="title">
+            <div>
+                <h1>My.</h1>
+                <h1 class="Portfolio">Portfolio.</h1>
+            </div>
+        </section>
+        <section class="moi" id="me">
+            <img src="img/francois.JPG">
+            <div class="moi-content">
+                <h1>Moi</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus alias asperiores, aspernatur consequuntur cum delectus ea earum eius expedita itaque laborum minima, odit, placeat quibusdam reiciendis soluta unde voluptatem.</p>
+            </div>
+        </section>
+        <section class="project" id="project">
+            <h1 class="title-projet">Mes projets</h1>
+            <div class="cardSelect">
+                <a href="https://github.com/SkyalphaBe/B.U.T-website">
+                    <div class="card">
+                        <img src="img/BUT.png">
+                        <div class="card-text">
+                            <p>Date : 31 décembre 2021</p>
+                            <h1>BUT-Website</h1>
+                            <p>Ce projet represent un des premier site web vitrine que j'ai pu realiser dans le cadre de ma formation a l'IUT en binôme.</p>
+                            <p class="GitHub" data-text="Voir sur GitHub">Voir sur GitHub</p>
+                        </div>
+                    </div>
+                </a>
+                <div class="card">
+                    <img src="img/snake.png">
+                    <div class="card-text">
+                        <p>Date : 2 décembre 2022</p>
+                        <h1>Snake</h1>
+                        <p>Ce projet m'a permis de manipuler le JavaScript dans le cadre de ma fomation afin de créer un jeu snake.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/mussto.png">
+                    <div class="card-text">
+                        <p>Date : 20 janvier 2022</p>
+                        <h1>Mussto</h1>
+                        <p>Ce projet represente une application web de gestion de la scolarité d'une université relaliser en équipe 4.Il ma permis de manipuler JS et PHP.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/swift.png">
+                    <div class="card-text">
+                        <p>Date : En cours de prod</p>
+                        <h1>Health App</h1>
+                        <p>Ce projet me permet d'appendre en auto-formation le langage Swift en créant une application IOS de suivis de la santé.</p>
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <img src="img/img-temp-card.jpg">
-                <div class="card-text">
-                    <p>date</p>
-                    <h1>Mussto</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est ullamcorper eget nulla facilisi etiam dignissim diam quis enim. Blandit cursus risus at ultrices mi tempus imperdiet nulla.</p>
+        </section>
+        <section class="competence" id="competence">
+            <h1>Compétences</h1>
+            <div class="wrapperTabs">
+                <div class="tabs">
+                    <input type="radio" class="tabs__radio" name="competence" id="tab1" checked>
+                    <label for="tab1" class="tabs__label">Comp 1</label>
+                    <div class="tabs__content">
+                        Contenu temporaire Comp 1
+                    </div>
+
+                    <input type="radio" class="tabs__radio" name="competence" id="tab2">
+                    <label for="tab2" class="tabs__label">Comp 2</label>
+                    <div class="tabs__content">
+                        Contenu temporaire Comp 2
+                    </div>
+
+                    <input type="radio" class="tabs__radio" name="competence" id="tab3">
+                    <label for="tab3" class="tabs__label">Comp 3</label>
+                    <div class="tabs__content">
+                        Contenu temporaire Comp 3
+                    </div>
+
+                    <input type="radio" class="tabs__radio" name="competence" id="tab4">
+                    <label for="tab4" class="tabs__label">Comp 4</label>
+                    <div class="tabs__content">
+                        Contenu temporaire Comp 4
+                    </div>
+
+                    <input type="radio" class="tabs__radio" name="competence" id="tab5">
+                    <label for="tab5" class="tabs__label">Comp 5</label>
+                    <div class="tabs__content">
+                        Contenu temporaire Comp 5
+                    </div>
+
+                    <input type="radio" class="tabs__radio" name="competence" id="tab6">
+                    <label for="tab6" class="tabs__label">Comp 6</label>
+                    <div class="tabs__content">
+                        Contenu temporaire Comp 6
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <img src="img/img-temp-card.jpg">
-                <div class="card-text">
-                    <p>date</p>
-                    <h1>Graph-Map</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est ullamcorper eget nulla facilisi etiam dignissim diam quis enim. Blandit cursus risus at ultrices mi tempus imperdiet nulla.</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="img/img-temp-card.jpg">
-                <div class="card-text">
-                    <p>date</p>
-                    <h1>Snake</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est ullamcorper eget nulla facilisi etiam dignissim diam quis enim. Blandit cursus risus at ultrices mi tempus imperdiet nulla.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="skills"></section>
-    <section class="footer"></section>
+        </section>
+    </main>
 </body>
 </html>
