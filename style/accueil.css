@@ -81,14 +81,18 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: -1;
     min-height: 100vh;
     font-family: NeueHaasGroteskBold, sans-serif;
-    font-size: 10em;
+}
+
+.title-content{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
     line-height: 1;
+    font-size: 10em;
 }
 
 .title h1{
