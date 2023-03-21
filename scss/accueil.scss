@@ -8,20 +8,20 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100vh;
     background-color: var(--cream);
 }
 
 main{
-    scroll-snap-type: y mandatory;
-    overflow: scroll;
     flex-grow: 1;
     position: relative;
-    scroll-behavior: smooth;
 }
 /*-----------------------------------------------------header----------------------------------------------------------*/
 nav{
@@ -66,7 +66,6 @@ nav{
         justify-content: space-around;
         width: 40%;
     }
-
 }
 
 a{
@@ -89,13 +88,11 @@ a{
 /*-----------------------------------------------------titre----------------------------------------------------------*/
 
 .title{
-    scroll-snap-align: start;
-    scroll-snap-stop: normal;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    height: 100vh;
     font-family: NeueHaasGroteskBold, sans-serif;
 }
 
@@ -120,8 +117,6 @@ a{
 /*-----------------------------------------------------mys----------------------------------------------------------*/
 
 .moi{
-    scroll-snap-align: start;
-    scroll-snap-stop: normal;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -163,8 +158,6 @@ a{
 /*-----------------------------------------------------Project----------------------------------------------------------*/
 
 .project{
-    scroll-snap-align: start;
-    scroll-snap-stop: normal;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -251,8 +244,6 @@ a{
 }
 /*-----------------------------------------------------Compétence---------------------------------------------------------------*/
 .competence{
-    scroll-snap-align: start;
-    scroll-snap-stop: normal;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -326,13 +317,17 @@ table {
         background-color: rgba(255,255,255,0.2);
         color: #fff;
     }
-
-
-    th {
-        background-color: var(--green);
+    th{
+        background-color:var(--green);
     }
 
-    #blanck{
+    .sae{
+        background-color: var(--cream);
+        color: black;
+    }
+
+    .blanck{
         background-color: transparent;
     }
+
 }
