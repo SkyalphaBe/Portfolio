@@ -11,6 +11,7 @@
 
 html {
   scroll-behavior: smooth;
+  transition: 0.3s;
 }
 
 body {
@@ -144,6 +145,7 @@ a {
 .moi p {
   width: 100%;
   font-size: x-large;
+  text-align: justify;
 }
 
 /*-----------------------------------------------------Project----------------------------------------------------------*/
@@ -151,10 +153,11 @@ a {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  padding: 10% 3.5% 10% 3.5%;
   background-color: #F0F1E4;
   min-height: 100vh;
   font-family: NeueHaasGrotesk, sans-serif;
+  padding: 10% 3.5% 10% 3.5%;
+  width: 100%;
 }
 .project h1 {
   font-size: 3em;
@@ -185,7 +188,6 @@ a {
   border-radius: 15px;
   height: 30em;
   width: 20em;
-  margin: 10px;
   transition: all, 0.3s;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
@@ -208,27 +210,16 @@ a {
 
 .GitHub {
   color: var(--green);
-  position: relative;
+  font-weight: bold;
   font-size: 1.5em;
-  -webkit-text-stroke: 0.1vw #232020;
-  text-transform: uppercase;
-}
-
-.GitHub::before {
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  color: #F0F1E4;
-  -webkit-text-stroke: 0vw #232020;
-  border-right: 2px solid #F0F1E4;
-  overflow: hidden;
+  transition: all, 0.3s;
 }
 
 .card:hover {
   scale: 1.05;
+}
+.card:hover .GitHub {
+  color: var(--cream);
 }
 
 /*-----------------------------------------------------Compétence---------------------------------------------------------------*/
@@ -246,6 +237,9 @@ a {
 }
 .competence h1 {
   font-size: 3em;
+}
+.competence h2 {
+  padding: 20px;
 }
 
 .wrapperTabs {

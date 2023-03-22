@@ -1,7 +1,12 @@
-const header = document.querySelector(".site-header")
+const header = document.querySelector(".site-header");
 let oldScrollY = document.body.scrollTop;
-document.addEventListener("scroll",(evt)=>{
-    if(oldScrollY > window.scrollY){
+
+
+document.addEventListener("scroll",()=>{
+    if (oldScrollY<=0){
+        header.classList.remove('hide');
+    }
+    else if(oldScrollY > window.scrollY){
         header.classList.remove('hide');
     } else {
         header.classList.add('hide');
