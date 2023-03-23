@@ -55,13 +55,14 @@ nav{
         justify-content: space-around;
         width: 100%;
         padding: 1%;
+
+        h1{
+            background-color: #232020;
+            padding: 10px;
+            border-radius: 15px;
+        }
     }
 
-    .header-content h1{
-        background-color: #232020;
-        padding: 10px;
-        border-radius: 15px;
-    }
 
     .link{
         display: flex;
@@ -261,26 +262,27 @@ a{
     }
 }
 
+/*-----------------------------------------------------animation page----------------------------------------------------------*/
+
 .wrapperTabs{
-    width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-
+    flex-grow: 1;
 }
-/*-----------------------------------------------------animation page----------------------------------------------------------*/
 
 .tabs{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    max-width: 90vw;
+    min-width: 90vw;
+    align-content:baseline;
 
     .tabs__label{
         padding: 10px 16px;
         cursor: pointer;
         font-size: 1.5em;
+        height: fit-content;
     }
 
     .tabs__radio{
@@ -292,6 +294,7 @@ a{
         line-height: 1.5;
         font-size: 0.9em;
         display: none;
+        flex-grow: 1;
     }
 
     .tabs__radio:checked+.tabs__label{
@@ -305,30 +308,48 @@ a{
     }
 }
 
+.competenceContent{
+    display: flex;
+    justify-content: space-around;
+}
 
-table {
-    border-collapse: collapse;
-    box-shadow: 0 0 20px rgba(0,0,0,0.1);
-    border-radius: 1em;
-    border: 2px solid white;
-    overflow: hidden;
+.projectCard{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 1em;
+    width: 22.5em;
 
-    th, td {
-        padding: 10px;
-        background-color: rgba(255,255,255,0.2);
-        color: #fff;
+    .cardText{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        z-index: 10;
+        width: 22.5em;
+        height: 22.5em;
+        background-color: var(--green);
     }
-    th{
-        background-color:var(--green);
-    }
 
-    .sae{
+    .cardBody{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 15px;
+        position: absolute;
+        top: 0;
+        height: 22.5em;
         background-color: var(--cream);
-        color: black;
+        transition: all 0.5s;
+        color: #232020;
+        padding: 1.25em;
     }
 
-    .blanck{
-        background-color: transparent;
+    &:hover{
+        .cardBody{
+            border-radius:0 0 15px 15px;
+            translate: 0 95%;
+        }
     }
-
 }
