@@ -229,7 +229,7 @@ a {
   justify-content: center;
   margin: 0;
   padding: 3.5%;
-  min-height: 100vh;
+  min-height: 125vh;
   width: 100%;
   background-color: #232020;
   color: #FFFFFF;
@@ -293,7 +293,7 @@ a {
   flex-direction: column;
   position: relative;
   margin: 1em;
-  width: 22.5em;
+  width: 20em;
 }
 .projectCard .cardText {
   display: flex;
@@ -301,8 +301,8 @@ a {
   align-items: center;
   border-radius: 15px;
   z-index: 10;
-  width: 22.5em;
-  height: 22.5em;
+  width: 20em;
+  height: 20em;
   background-color: var(--green);
 }
 .projectCard .cardBody {
@@ -313,7 +313,7 @@ a {
   border-radius: 15px;
   position: absolute;
   top: 0;
-  height: 22.5em;
+  height: 20em;
   background-color: var(--cream);
   transition: all 0.5s;
   color: #232020;
@@ -322,6 +322,33 @@ a {
 .projectCard:hover .cardBody {
   border-radius: 0 0 15px 15px;
   translate: 0 95%;
+}
+
+.Annee {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #232020;
+}
+
+.AnneeContent {
+  background-color: var(--cream);
+  border-radius: 15px;
+  padding: 15px;
+}
+.AnneeContent .valide {
+  margin-top: 15px;
+  background-color: var(--green);
+  border-radius: 15px;
+  color: var(--cream);
+  padding: 10px;
+  width: fit-content;
+}
+
+#titleCardProjet {
+  color: var(--green);
+  font-size: 2em;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=accueil.css.map */
