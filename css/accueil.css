@@ -296,6 +296,7 @@ a {
   width: 250px;
 }
 .projectCard .cardText {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -305,6 +306,17 @@ a {
   height: 275px;
   background-color: var(--green);
   text-align: center;
+}
+.projectCard .cardText span {
+  font-size: large;
+  font-weight: bold;
+  position: absolute;
+  background-color: #F0F1E4;
+  border-radius: 15px;
+  color: #232020;
+  padding: 10px;
+  top: 200px;
+  right: 20px;
 }
 .projectCard .cardBody {
   display: flex;
