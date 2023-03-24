@@ -229,7 +229,7 @@ a {
   justify-content: center;
   margin: 0;
   padding: 3.5%;
-  min-height: 125vh;
+  min-height: 100vh;
   width: 100%;
   background-color: #232020;
   color: #FFFFFF;
@@ -286,6 +286,7 @@ a {
 .competenceContent {
   display: flex;
   justify-content: space-around;
+  width: 90%;
 }
 
 .projectCard {
@@ -293,7 +294,7 @@ a {
   flex-direction: column;
   position: relative;
   margin: 1em;
-  width: 20em;
+  width: 250px;
 }
 .projectCard .cardText {
   display: flex;
@@ -301,9 +302,10 @@ a {
   align-items: center;
   border-radius: 15px;
   z-index: 10;
-  width: 20em;
-  height: 20em;
+  width: 275px;
+  height: 275px;
   background-color: var(--green);
+  text-align: center;
 }
 .projectCard .cardBody {
   display: flex;
@@ -313,15 +315,15 @@ a {
   border-radius: 15px;
   position: absolute;
   top: 0;
-  height: 20em;
+  height: 275px;
   background-color: var(--cream);
   transition: all 0.5s;
   color: #232020;
   padding: 1.25em;
 }
 .projectCard:hover .cardBody {
-  border-radius: 0 0 15px 15px;
-  translate: 0 95%;
+  border-radius: 0 15px 15px 0;
+  translate: 95% 0;
 }
 
 .Annee {
@@ -335,6 +337,8 @@ a {
   background-color: var(--cream);
   border-radius: 15px;
   padding: 15px;
+  max-width: 40%;
+  height: 40%;
 }
 .AnneeContent .valide {
   margin-top: 15px;
@@ -345,7 +349,7 @@ a {
   width: fit-content;
 }
 
-#titleCardProjet {
+.titleCardProjet {
   color: var(--green);
   font-size: 2em;
   font-weight: bold;
