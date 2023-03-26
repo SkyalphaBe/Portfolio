@@ -32,7 +32,7 @@ nav {
 
 /*-----------------------------------------------------header----------------------------------------------------------*/
 .site-header {
-  z-index: 1;
+  z-index: 30;
   position: fixed;
   display: flex;
   align-items: center;
@@ -66,7 +66,6 @@ nav {
   justify-content: space-around;
   width: 40%;
 }
-
 a {
   font-family: NeueHaasGrotesk, sans-serif;
   -webkit-appearance: none;
@@ -190,14 +189,24 @@ a {
   height: 30em;
   width: 20em;
   transition: all, 0.3s;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  gap: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0 10px 36px 0, rgba(0, 0, 0, 0.06) 0 0 0 1px;
 }
 .card .card-text {
+  display: flex;
+  flex-direction: column;
   padding: 5%;
+  flex-grow: 1;
+}
+.card .card-content {
+  flex-grow: 1;
 }
 .card h1 {
   font-size: 2em;
   padding: 5%;
+}
+.card h2 {
+  color: var(--green);
 }
 .card img {
   max-height: 100%;
@@ -205,19 +214,10 @@ a {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   filter: grayscale(100%);
+  transition: 0.3s all;
 }
 .card:hover img {
   filter: grayscale(0%);
-}
-.card p {
-  margin-bottom: 10px;
-}
-
-.GitHub {
-  color: var(--green);
-  font-weight: bold;
-  font-size: 1.5em;
-  transition: all, 0.3s;
 }
 
 .card:hover {
@@ -308,6 +308,7 @@ a {
   height: 275px;
   background-color: var(--green);
   text-align: center;
+  font-size: 0.75em;
 }
 .projectCard .cardText button {
   position: absolute;
@@ -373,6 +374,64 @@ a {
   color: var(--green);
   font-size: 2em;
   font-weight: bold;
+}
+
+/*-----------------------------------------------------Contact----------------------------------------------------------*/
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-family: NeueHaasGrotesk, sans-serif;
+  color: #31E981;
+}
+footer .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+  background-color: var(--cream);
+}
+footer .contact .logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+  height: 75px;
+  transition: 0.3s all;
+}
+footer .contact .logo img {
+  width: 48px;
+  height: 48px;
+}
+footer .contact .logo img:hover {
+  scale: 1.1;
+}
+footer .goBack {
+  color: #31E981;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+footer .goBack img {
+  width: 48px;
+  height: 48px;
+}
+footer #dlCV {
+  background-color: #31E981;
+  color: #F0F1E4;
+  width: fit-content;
+  padding: 10px;
+  height: fit-content;
+  border-radius: 15px;
+  border: none;
+  font-size: 1.2em;
+  transition: 0.3s all;
+}
+footer #dlCV:hover {
+  scale: 1.1;
 }
 
 /*# sourceMappingURL=accueil.css.map */
