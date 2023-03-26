@@ -169,11 +169,12 @@ a{
     background-color: #F0F1E4;
     min-height: 100vh;
     font-family: NeueHaasGrotesk, sans-serif;
-    padding: 10% 3.5% 10% 3.5%;
+    padding:3%;
     width: 100%;
 
     h1{
         font-size: 3em;
+        color: var(--green);
     }
 }
 .title-projet{
@@ -195,7 +196,7 @@ a{
 .card{
     display: flex;
     flex-direction: column;
-    background-color: var(--green);
+    background-color:#232020;
     font-family: NeueHaasGrotesk, sans-serif;
     color: #F0F1E4;
     border-radius: 15px;
@@ -218,6 +219,12 @@ a{
         max-width: 100%;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
+        filter: grayscale(100%);
+    }
+    &:hover{
+        img{
+            filter: grayscale(0%);
+        }
     }
 
     p{
@@ -235,10 +242,6 @@ a{
 
 .card:hover{
     scale: 1.05;
-
-    .GitHub{
-        color: var(--cream);
-    }
 }
 /*-----------------------------------------------------Compétence---------------------------------------------------------------*/
 .competence{
@@ -332,16 +335,23 @@ a{
         background-color: var(--green);
         text-align: center;
 
-        span{
-            font-size: large;
-            font-weight: bold;
+        button{
             position: absolute;
-            background-color: #F0F1E4;
-            border-radius: 15px;
-            color: #232020;
-            padding: 10px;
-            top: 200px;
-            right: 20px;
+            top: 10px;
+            right: 0;
+            background-color: transparent;
+            border: none;
+            transition: 0.3s all;
+
+            &:hover{
+                scale: 1.1;
+            }
+        }
+        .menuCard{
+            font-weight: bold;
+            padding: 0;
+            color: #FFFFFF;
+            height: 50px;
         }
     }
 
@@ -360,11 +370,9 @@ a{
         padding: 1.25em;
     }
 
-    &:hover{
-        .cardBody{
-            border-radius: 0 15px 15px 0;
-            translate: 95% 0;
-        }
+    .cardBodyAfter{
+        border-radius: 0 15px 15px 0;
+        translate: 95% 0;
     }
 }
 
@@ -384,10 +392,11 @@ a{
     height: 40%;
 
     .valide{
+        font-size: 1.4em;
+        font-weight: bold;
         margin-top:15px ;
-        background-color: var(--green);
         border-radius: 15px;
-        color: var(--cream);
+        color:var(--green);
         padding: 10px;
         width: fit-content;
     }
