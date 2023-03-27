@@ -30,6 +30,11 @@ nav {
   width: 100%;
 }
 
+a {
+  -webkit-appearance: none;
+  text-decoration: none;
+}
+
 /*-----------------------------------------------------header----------------------------------------------------------*/
 .site-header {
   z-index: 30;
@@ -66,13 +71,20 @@ nav {
   justify-content: space-around;
   width: 40%;
 }
-a {
+.site-header a:hover {
+  background-color: var(--cream);
+  scale: 1.1;
+}
+.site-header a {
   font-family: NeueHaasGrotesk, sans-serif;
   -webkit-appearance: none;
   text-decoration: none;
   color: #232020;
   font-weight: bold;
   font-size: 1.5em;
+  transition: 0.3s all;
+  padding: 10px;
+  border-radius: 15px;
 }
 
 .lineHeader {
@@ -128,6 +140,7 @@ a {
   padding-left: 3.5%;
   padding-right: 3.5%;
   height: 100%;
+  gap: 10px;
 }
 .moi h1 {
   font-size: 3em;
@@ -145,6 +158,29 @@ a {
   width: 100%;
   font-size: x-large;
   text-align: justify;
+}
+.moi #titlePassion {
+  margin-top: 30px;
+}
+.moi .like {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.moi .like .card-like {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.moi .like h3 {
+  color: var(--green);
+}
+.moi .like img {
+  height: 50px;
+  width: 50px;
+  margin: 10px;
 }
 
 /*-----------------------------------------------------Project----------------------------------------------------------*/
@@ -433,5 +469,7 @@ footer #dlCV {
 footer #dlCV:hover {
   scale: 1.1;
 }
+
+/*-----------------------------------------------------Media Query----------------------------------------------------------*/
 
 /*# sourceMappingURL=accueil.css.map */

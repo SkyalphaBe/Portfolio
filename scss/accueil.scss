@@ -28,6 +28,10 @@ main{
 nav{
     width: 100%;
 }
+a{
+    -webkit-appearance: none;
+    text-decoration: none;
+}
 /*-----------------------------------------------------header----------------------------------------------------------*/
 
 .site-header{
@@ -70,18 +74,23 @@ nav{
         width: 40%;
     }
     a:hover{
+        background-color: var(--cream);
+        scale: 1.1;
+    }
 
+    a{
+        font-family: NeueHaasGrotesk, sans-serif;
+        -webkit-appearance: none;
+        text-decoration: none;
+        color: #232020;
+        font-weight: bold;
+        font-size: 1.5em;
+        transition: 0.3s all;
+        padding: 10px;
+        border-radius: 15px;
     }
 }
 
-a{
-    font-family: NeueHaasGrotesk, sans-serif;
-    -webkit-appearance: none;
-    text-decoration: none;
-    color: #232020;
-    font-weight: bold;
-    font-size: 1.5em;
-}
 
 .lineHeader{
     background-color: var(--green);
@@ -139,6 +148,7 @@ a{
         padding-left: 3.5%;
         padding-right: 3.5%;
         height: 100%;
+        gap: 10px;
     }
 
     h1{
@@ -160,6 +170,35 @@ a{
         width: 100%;
         font-size: x-large;
         text-align: justify;
+    }
+
+    #titlePassion{
+        margin-top: 30px;
+
+    }
+
+    .like{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+
+        .card-like{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h3{
+            color: var(--green);
+        }
+
+        img{
+            height: 50px;
+            width: 50px;
+            margin: 10px;
+        }
     }
 }
 
@@ -478,3 +517,5 @@ footer{
         scale: 1.1;
     }
 }
+
+/*-----------------------------------------------------Media Query----------------------------------------------------------*/
