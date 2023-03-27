@@ -495,11 +495,11 @@ footer #dlCV:hover {
     color: #F0F1E4;
   }
   .moi p {
-    font-size: 1.2em;
+    font-size: 1.2rem;
     width: fit-content;
   }
   .moi h2 {
-    font-size: 1.2em;
+    font-size: 1.2rem;
   }
 }
 @media screen and (max-width: 1261px) {
@@ -539,7 +539,19 @@ footer #dlCV:hover {
 }
 @media screen and (max-width: 1125px) {
   .card {
-    margin-bottom: 10px;
+    margin: 10px;
+  }
+}
+@media screen and (max-width: 1073px) {
+  .moi {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .moi #desk {
+    display: none;
+  }
+  .moi-content {
+    padding: 20px;
   }
 }
 
