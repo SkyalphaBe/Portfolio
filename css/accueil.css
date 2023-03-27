@@ -30,6 +30,11 @@ nav {
   width: 100%;
 }
 
+a {
+  -webkit-appearance: none;
+  text-decoration: none;
+}
+
 /*-----------------------------------------------------header----------------------------------------------------------*/
 .site-header {
   z-index: 30;
@@ -66,13 +71,20 @@ nav {
   justify-content: space-around;
   width: 40%;
 }
-a {
+.site-header a:hover {
+  background-color: var(--cream);
+  scale: 1.1;
+}
+.site-header a {
   font-family: NeueHaasGrotesk, sans-serif;
   -webkit-appearance: none;
   text-decoration: none;
   color: #232020;
   font-weight: bold;
   font-size: 1.5em;
+  transition: 0.3s all;
+  padding: 10px;
+  border-radius: 15px;
 }
 
 .lineHeader {
@@ -128,6 +140,7 @@ a {
   padding-left: 3.5%;
   padding-right: 3.5%;
   height: 100%;
+  gap: 10px;
 }
 .moi h1 {
   font-size: 3em;
@@ -145,6 +158,32 @@ a {
   width: 100%;
   font-size: x-large;
   text-align: justify;
+}
+.moi #obj {
+  margin-top: 20px;
+}
+.moi #titlePassion {
+  margin-top: 30px;
+}
+.moi .like {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.moi .like .card-like {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.moi .like h3 {
+  color: var(--green);
+}
+.moi .like img {
+  height: 50px;
+  width: 50px;
+  margin: 10px;
 }
 
 /*-----------------------------------------------------Project----------------------------------------------------------*/
@@ -207,6 +246,10 @@ a {
 }
 .card h2 {
   color: var(--green);
+  transition: 0.3s all;
+  border-radius: 15px;
+  padding: 5px;
+  width: fit-content;
 }
 .card img {
   max-height: 100%;
@@ -218,6 +261,9 @@ a {
 }
 .card:hover img {
   filter: grayscale(0%);
+}
+.card:hover h2 {
+  background-color: var(--cream);
 }
 
 .card:hover {
@@ -432,6 +478,69 @@ footer #dlCV {
 }
 footer #dlCV:hover {
   scale: 1.1;
+}
+
+/*-----------------------------------------------------Media Query----------------------------------------------------------*/
+@media screen and (max-width: 1250px) {
+  .title-content h1 {
+    font-size: 1.2em;
+  }
+  .moi {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #232020;
+    font-family: NeueHaasGrotesk, sans-serif;
+    color: #F0F1E4;
+  }
+  .moi p {
+    font-size: 1.2em;
+    width: fit-content;
+  }
+  .moi h2 {
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 1261px) {
+  .competenceContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .project {
+    justify-content: space-evenly;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    background-color: #232020;
+    font-family: NeueHaasGrotesk, sans-serif;
+    color: #F0F1E4;
+    border-radius: 15px;
+    height: 26em;
+    width: 16em;
+  }
+  .card p {
+    font-size: 0.8em;
+  }
+  .card h1 {
+    font-size: 1.5em;
+  }
+  .card h2 {
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 1216px) {
+  .moi {
+    height: 80vh;
+  }
+}
+@media screen and (max-width: 1125px) {
+  .card {
+    margin-bottom: 10px;
+  }
 }
 
 /*# sourceMappingURL=accueil.css.map */
