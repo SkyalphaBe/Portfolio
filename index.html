@@ -1,10 +1,489 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/accueil.css">
     <title>PortFolio Graux François</title>
+    <script src="index.js" defer></script>
 </head>
 <body>
+    <header class="site-header">
+        <nav>
+            <div class="header-content" id="nav">
+                <h1>François Graux</h1>
+                <div class="link">
+                    <a href="#home">Accueil</a>
+                    <a href="#me">Moi</a>
+                    <a href="#project">Projets</a>
+                    <a href="#competence">Compétences</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="title" id="home">
+            <div class="title-content">
+                <h1>My.</h1>
+                <h1 class="Portfolio">Portfolio.</h1>
+            </div>
+        </section>
+        <section class="moi" id="me">
+            <img src="img/francois.JPG" alt="" id="desk">
+            <div class="moi-content">
+                <h1>Moi</h1>
+                <br>
+                <p>Bonjour et bienvenue sur mon portfolio de développeur ! Je suis passionné par le development et j'ai décidé de partager mes projets les plus réussis avec vous ainsi que vous présentez mes compétences.</p>
+                <br>
+                <p>Tout au long de mon parcours universitaire, j'ai acquis de bonnes bases dans les langages de programmation tels que JAVA, HTML/css, Javascript, Symphony, C ainsi que dans la gestion de projets de développement informatique. Vous retrouverez donc des projets liés à tous ces langages</p>
+                <h2 id="titlePassion">Centre d'intérêt</h2>
+                <div class="like">
+                    <div class="card-like">
+                        <img src="img/icons8-web-development-66.png" alt="">
+                        <h3>Web Front-End</h3>
+                    </div>
+                    <div class="card-like">
+                        <img src="img/icons8-cpu-64.png" alt="">
+                        <h3>Technologie</h3>
+                    </div>
+                    <div class="card-like">
+                        <img src="img/icons8-manette-90.png" alt="">
+                        <h3>Jeux vidéo</h3>
+                    </div>
+                </div>
+                <p id="obj">Depuis toujours je suis attiré par tout ce qui touche de près ou de loins à l'informatique et aujourd'hui plus que jamais je me rapproche de mon objectif de toujours : vivre de ma passions</p>
+            </div>
+        </section>
+        <section class="project" id="project">
+            <h1 class="title-projet">Mes projets majeur</h1>
+            <div class="cardSelect">
+                <a href="https://github.com/SkyalphaBe/B.U.T-website">
+                    <div class="card">
+                        <img src="img/BUT.png" alt="">
+                        <div class="card-text">
+                            <p>Date : 31 décembre 2021</p>
+                            <h1>BUT-Website</h1>
+                            <p class="card-content">Ce projet represent un des premiers site web vitrine que j'ai pu réaliser dans le cadre de ma formation à l'IUT en binôme.</p>
+                            <h2>Voir sur GitHub</h2>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://github.com/SkyalphaBe/Snake-JS">
+                    <div class="card">
+                        <img src="img/snake.png" alt="">
+                        <div class="card-text">
+                            <p>Date : 2 décembre 2022</p>
+                            <h1>Snake</h1>
+                            <p class="card-content">Ce projet m'a permis de manipuler le JavaScript dans le cadre de ma formation afin de créer un jeu snake.</p>
+                            <h2>Voir sur GitHub</h2>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://github.com/SkyalphaBe/Mussto">
+                    <div class="card">
+                        <img src="img/mussto.png" alt="">
+                        <div class="card-text">
+                            <p>Date : 20 janvier 2022</p>
+                            <h1>Mussto</h1>
+                            <p class="card-content">Ce projet représente une application web de gestion de la scolarité d'une université réaliser en équipe 4. Il m'a permis de manipuler JS et PHP.</p>
+                            <h2>Voir sur GitHub</h2>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://github.com/SkyalphaBe/Health-App">
+                    <div class="card">
+                        <img src="img/swift.png" alt="">
+                        <div class="card-text">
+                            <p>Date : En cours de prod</p>
+                            <h1>Health App</h1>
+                            <p class="card-content">Ce projet me permet d'appendre en auto-formation le langage Swift en créant une application IOS de suivis de la santé.</p>
+                            <h2>Voir sur GitHub</h2>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section class="competence" id="competence">
+            <h1>Compétences IUT</h1>
+            <div class="wrapperTabs">
+                <div class="tabs">
+                    <input type="radio" class="tabs__radio" name="competence" id="tab1" checked>
+                    <label for="tab1" class="tabs__label">Réaliser</label>
+                    <div class="tabs__content">
+                        <h2>Cette compétence représente tout ce qui touche au développement d'application et au développement web.</h2>
+                        <div class="Annee">
+                            <div class="AnneeContent">
+                                <h3>Année 1 : Développer des applications informatiques simples</h3>
+                                <h4>Apprentisage Critique lié à la compétence : </h4>
+                                <ul>
+                                    <li>Implémenter des conceptions simples</li>
+                                    <li>Élaborer des conceptions simples</li>
+                                    <li>Faire des essais et évaluer leurs résultats en regard des spécifications</li>
+                                    <li>Développer des interfaces utilisateurs</li>
+                                </ul>
+                                <h4 class="valide">Compétence validée</h4>
+                            </div>
+                            <div class="AnneeContent">
+                                <h3>Année 2 : Partir des exigences et aller jusqu’à une application complète</h3>
+                                <h4>Apprentisage Critique lié à la compétence : </h4>
+                                <ul>
+                                    <li>Élaborer et implémenter les spécifications fonctionnelles et non fonctionnelles à partir des exigences</li>
+                                    <li>Appliquer des principes d’accessibilité et d’ergonomie</li>
+                                    <li>Adopter de bonnes pratiques de conception et de programmation</li>
+                                    <li>Vérifier et valider la qualité de l’application par les tests</li>
+                                </ul>
+                                <h4 class="valide">Compétence en cours apprentisage</h4>
+                            </div>
+                        </div>
+                        <h2 class="titleCardProjet">Quelques projet associès</h2>
+                        <div class="competenceContent">
+                           <div class="projectCard">
+                               <div class="cardText">
+                                   <h1>SAE Grama (JAVA)</h1>
+                                    <button class="btnMenuCard"><img class="menuCard" src="img/icons8-menu-vertical-100.png" alt=""></button>
+                               </div>
+                               <div class="cardBody">
+                                   <h3>Ce projet m'a permis</h3>
+                                   <ul>
+                                       <li>D'être capable de créer des applications en programation orienter objet</li>
+                                       <li>De respecter les besoins client par le biais d'un cahier des charges</li>
+                                       <li>D'être capable de partir des exigences et d'être capable de créer une application complète dans les délais impartis </li>
+                                   </ul>
+                               </div>
+                           </div>
+                            <div class="projectCard">
+                                <div class="cardText">
+                                    <h1>SAE Web</h1>
+                                    <button class="btnMenuCard"><img class="menuCard" src="img/icons8-menu-vertical-100.png" alt=""></button>
+                                </div>
+                                <div class="cardBody">
+                                    <h3>Ce projet m'a permis</h3>
+                                    <ul>
+                                        <li>D'être capable de créer des interfaces utilisateurs en HTML/CSS sans difficulté</li>
+                                        <li>De recueillir les besoins clients afin de fournir la solution adaptée à leur besoin</li>
+                                        <li>De decouvrir les codes du web</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="radio" class="tabs__radio" name="competence" id="tab2">
+                    <label for="tab2" class="tabs__label">Optimiser</label>
+                    <div class="tabs__content">
+                        <h2>Cette compétence représente la capacité à fournir des solutions informatiques efficaces et optimiser pour maximiser les performances </h2>
+                        <div class="Annee">
+                            <div class="AnneeContent">
+                                <h3>Année 1 : Appréhender et construire des algorithmes</h3>
+                                <h4>Apprentisage Critique lié à la compétence : </h4>
+                                <ul>
+                                    <li>Analyser un problème avec méthode</li>
+                                    <li>Comparer des algorithmes pour des problèmes classiques</li>
+                                    <li>Formaliser et mettre en œuvre des outils mathématiques pour l’informatique</li>
+                                </ul>
+                                <h4 class="valide">Compétence validée</h4>
+                            </div>
+                            <div class="AnneeContent">
+                                <h3>Année 2 : Sélectionner les algorithmes adéquats pour répondre à un problème donné</h3>
+                                <h4>Apprentisage Critique lié à la compétence : </h4>
+                                <ul>
+                                    <li>Choisir des structures de données complexes adaptées au problème</li>
+                                    <li>Utiliser des techniques algorithmiques adaptées pour des problèmes complexes</li>
+                                    <li>Comprendre les enjeux et moyens de sécurisation des données et du code</li>
+                                    <li>Évaluer l’impact environnemental et sociétal des solutions proposées</li>
+                                </ul>
+                                <h4 class="valide">Compétence validée</h4>
+                            </div>
+                        </div>
+                        <h2 class="titleCardProjet">Quelques projet associès</h2>
+                        <div class="competenceContent">
+                            <div class="projectCard">
+                                <div class="cardText">
+                                    <h1>SAE Algo</h1>
+                                    <button class="btnMenuCard"><img class="menuCard" src="img/icons8-menu-vertical-100.png" alt=""></button>
+                                </div>
+                                <div class="cardBody">
+                                    <h3>Ce projet m'a permis</h3>
+                                    <ul>
+                                        <li>D'être capable de choisir les algorithmes adaptés au problème informatique</li>
+                                        <li>De réfléchir sur la qualité de mes implémentations et du stockage des données</li>
+                                        <li>D'être capable d'optimiser le fonctionnement de mes programmes</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="projectCard">
+                                <div class="cardText">
+                                    <h1>SAE Grama</h1>
+                                    <button class="btnMenuCard"><img class="menuCard" src="img/icons8-menu-vertical-100.png" alt=""></button>
+                                </div>
+                                <div class="cardBody">
+                                    <h3>Ce projet m'a permis</h3>
+                                    <ul>
+                                        <li>De manipuler des structures de données complexes</li>
+                                        <li>De pouvoir optimiser les algos d'une application desktop</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
+                    <input type="radio" class="tabs__radio" name="competence" id="tab3">
+                    <label for="tab3" class="tabs__label">Administrer</label>
+                    <div class="tabs__content">
+                        <h2>Cette compétence représente l'Installation, la configuration et la mise à disposition, maintien en conditions opérationnelles des infrastructures, des services et des réseaux</h2>
+                        <div class="Annee">
+                            <div class="AnneeContent">
+                                <h3>Année 1 : Installer et configurer un poste de travail</h3>
+                                <h4>Apprentisage Critique lié à la compétence : </h4>
+                                <ul>
+                                    <li>Identifier les différents composants (matériels et logiciels) d’un système numérique</li>
+                                    <li>Utiliser les fonctionnalités de base d’un système multitâches / multiutilisateurs</li>
+                                    <li>Installer et configurer un système d’exploitation et des outils de développement</li>
+                                    <li>Configurer un poste de travail dans un réseau d’entreprise</li>
+                                </ul>
+                                <h4 class="valide">Compétence validée</h4>
+                            </div>
+                            <div class="AnneeContent">
+                                <h3>Année 2 : Déployer des services dans une architecture réseau</h3>
+                                <h4>Apprentisage Critique lié à la compétence : </h4>
+                                <ul>
+                                    <li>Concevoir et développer des applications communicantes</li>
+                                    <li>Utiliser des serveurs et des services réseaux virtualisés</li>
+                                    <li>Sécuriser les services et données d’un système</li>
+                                </ul>
+                                <h4 class="valide">Compétence en cours apprentisage</h4>
+                            </div>
+                        </div>
+                        <h2 class="titleCardProjet">Quelques projet associès</h2>
+                        <div class="competenceContent">
+                            <div class="projectCard">
+                                <div class="cardText">
+                                    <h1>SAE Reseau</h1>
+                                    <button class="btnMenuCard"><img class="menuCard" src="img/icons8-menu-vertical-100.png" alt=""></button>
+                                </div>
+                                <div class="cardBody">
+                                    <h3>Ce projet m'a permis</h3>
+                                    <ul>
+                                        <li>De déployer un serveur web apache 2</li>
+                                        <li>De comprendre le fonctionnement d'un reseau</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="projectCard">
+                                <div class="cardText">
+                                    <h1>SAE poste de dev</h1>
+                                    <button class="btnMenuCard"><img class="menuCard" src="img/icons8-menu-vertical-100.png" alt=""></button>
+                                </div>
+                                <div class="cardBody">
+                                    <h3>Ce projet m'a permis</h3>
+                                    <ul>
+                                        <li>De comprendre le fonctionnement des OS afin de dev</li>
+                                        <li>De choisir les outils adaptés au développement</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <input type="radio" class="tabs__radio" name="competence" id="tab4">
+                    <label for="tab4" class="tabs__label">Gérer</label>
+                    <div class="tabs__content">
+                       <h2>Cette compétence représente la partie de conception /gestion / manipulation des bases de donnée SQL ou autre dans une entreprise</h2>
+                        <div class="Annee">
+                            <div class="AnneeContent">
+                                <h3>Année 1 : Concevoir et mettre en place une base de données à partir d’un cahier des charges client</h3>
+                                <h4>Apprentisage Critique lié à la compétence : </h4>
+                                <ul>
+                                    <li>Mettre à jour et interroger une base de données relationnelle</li>
+                                    <li>Visualiser des données</li>
+                                    <li>Concevoir une base de données relationnelle à partir d’un cahier des charges</li>
+                                </ul>
+                                <h4 class="valide">Compétence validée</h4>
+                            </div>
+                            <div class="AnneeContent">
+                                <h3>Année 2 : Optimiser une base de données, interagir avec une application et mettre en œuvre la sécurité</h3>
+                                <h4>Apprentisage Critique lié à la compétence : </h4>
+                                <ul>
+                                    <li>Optimiser les modèles de données de l’entreprise</li>
+                                    <li>Assurer la sécurité des données (intégrité et confidentialité)</li>
+                                    <li>Organiser la restitution de données à travers la programmation et la visualisation</li>
+                                    <li>Manipuler des données hétérogènes</li>
+                                </ul>
+                                <h4 class="valide">Compétence validée</h4>
+                            </div>
+                        </div>
+                        <h2 class="titleCardProjet">Quelques projet associès</h2>
+                        <div class="competenceContent">
+                            <div class="projectCard">
+                                <div class="cardText">
+                                    <h1>SAE Junior dev (SQL)</h1>
+                                    <button class="btnMenuCard"><img class="menuCard" src="img/icons8-menu-vertical-100.png" alt=""></button>
+                                </div>
+                                <div class="cardBody">
+                                    <h3>Ce projet m'a permis</h3>
+                                    <ul>
+                                        <li>De créer une base de donnée relationnel</li>
+                                        <li>De concevoir un jeu de donnée liès au data</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="projectCard">
+                                <div class="cardText">
+                                    <h1>SAE Power BI</h1>
+                                    <button class="btnMenuCard"><img class="menuCard" src="img/icons8-menu-vertical-100.png" alt=""></button>
+                                </div>
+                                <div class="cardBody">
+                                    <h3>Ce projet m'a permis</h3>
+                                    <ul>
+                                        <li>De visualiser les données de manières pro</li>
+                                        <li>De déduire des informations en manipulant la masse de donnée</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <input type="radio" class="tabs__radio" name="competence" id="tab5">
+                    <label for="tab5" class="tabs__label">Gérer des projets </label>
+                    <div class="tabs__content">
+                        <h2>Cette compétence correspond à l'organiser et le pilotage d'un projet informatique avec des méthodes classiques ou agiles</h2>
+                        <div class="Annee">
+                            <div class="AnneeContent">
+                                <h3>Année 1 : Identifier les besoins métiers des clients et des utilisateurs</h3>
+                                <h4>Apprentisage Critique lié à la compétence : </h4>
+                                <ul>
+                                    <li>Appréhender les besoins du client et de l'utilisateur</li>
+                                    <li>Mettre en place les outils de gestion de projet</li>
+                                    <li>Identifier les acteurs et les différentes phases d’un cycle de développement</li>
+                                </ul>
+                                <h4 class="valide">Compétence validée</h4>
+                            </div>
+                            <div class="AnneeContent">
+                                <h3>Année 2 : Appliquer une démarche de suivi de projet en fonction des besoins métiers des clients et des utilisateurs</h3>
+                                <h4>Apprentisage Critique lié à la compétence : </h4>
+                                <ul>
+                                    <li>Identifier les processus présents dans une organisation en vue d’améliorer les systèmes d’information</li>
+                                    <li>Formaliser les besoins du client et de l'utilisateur</li>
+                                    <li>Identifier les critères de faisabilité d’un projet informatique</li>
+                                    <li>Définir et mettre en œuvre une démarche de suivi de projet</li>
+                                </ul>
+                                <h4 class="valide">Compétence validée</h4>
+                            </div>
+                        </div>
+                        <h2 class="titleCardProjet">Quelques projet associès</h2>
+                        <div class="competenceContent">
+                            <div class="projectCard">
+                                <div class="cardText">
+                                    <h1>SAE Economie</h1>
+                                    <button class="btnMenuCard"><img class="menuCard" src="img/icons8-menu-vertical-100.png" alt=""></button>
+                                </div>
+                                <div class="cardBody">
+                                    <h3>Ce projet m'a permis</h3>
+                                    <ul>
+                                        <li>De comprendre les enjeux économiques liés à l'informatique</li>
+                                        <li>De comprendre les problématiques lies au monde de l'entreprise informatique</li>
+                                        <li>D'être capable de comprendre le fonctionnement des organisations</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="projectCard">
+                                <div class="cardText">
+                                    <h1>SAE GPI</h1>
+                                    <button class="btnMenuCard"><img class="menuCard" src="img/icons8-menu-vertical-100.png" alt=""></button>
+                                </div>
+                                <div class="cardBody">
+                                    <h3>Ce projet m'a permis</h3>
+                                    <ul>
+                                        <li>De mettre en place et manipuler les outils de gestion de projet</li>
+                                        <li>De concevoir un cahier des charges en fonction du recueil des besoins clients</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="radio" class="tabs__radio" name="competence" id="tab6">
+                    <label for="tab6" class="tabs__label">Collaborer</label>
+                    <div class="tabs__content">
+                        <h2>Cette compétence correspond à l'acquisition le développement et exploitation des aptitudes nécessaires pour travailler efficacement dans une équipe informatique</h2>
+                        <div class="Annee">
+                            <div class="AnneeContent">
+                                <h3>Année 1 : Identifier ses aptitudes pour travailler dans une équipe</h3>
+                                <h4>Apprentisage Critique lié à la compétence : </h4>
+                                <ul>
+                                    <li>Appréhender l’écosystème numérique</li>
+                                    <li>Découvrir les aptitudes requises selon les différents secteurs informatiques</li>
+                                    <li>Identifier les statuts, les fonctions et les rôles de chaque membre d’une équipe pluridisciplinaire</li>
+                                    <li>Acquérir les compétences interpersonnelles pour travailler en équipe</li>
+                                </ul>
+                                <h4 class="valide">Compétence validée</h4>
+                            </div>
+                            <div class="AnneeContent">
+                                <h3>Année 2 : Situer son rôle et ses missions au sein d’une équipe informatique</h3>
+                                <h4>Apprentisage Critique lié à la compétence : </h4>
+                                <ul>
+                                    <li>Comprendre la diversité, la structure et la dimension de l’informatique dans une organisation</li>
+                                    <li>Appliquer une démarche pour intégrer une équipe informatique au sein d’une organisation</li>
+                                    <li>Mobiliser les compétences interpersonnelles pour travailler dans une équipe informatique</li>
+                                    <li>Rendre compte de son activité professionnelle</li>
+                                </ul>
+                                <h4 class="valide">Compétence en cours d'apprentisage</h4>
+                            </div>
+                        </div>
+                        <h2 class="titleCardProjet">Quelques projet associès</h2>
+                        <div class="competenceContent">
+                            <div class="projectCard">
+                                <div class="cardText">
+                                    <h1>SAE Comm</h1>
+                                    <button class="btnMenuCard"><img class="menuCard" src="img/icons8-menu-vertical-100.png" alt=""></button>
+                                </div>
+                                <div class="cardBody">
+                                    <h3>Ce projet m'a permis</h3>
+                                    <ul>
+                                        <li>De m'adapter au travaille en équipe</li>
+                                        <li>De souder une équipe afin de fournier le meilleur livrables possible</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="projectCard">
+                                <div class="cardText">
+                                    <h1>SAE reccueil des besoins</h1>
+                                    <button class="btnMenuCard"><img class="menuCard" src="img/icons8-menu-vertical-100.png" alt=""></button>
+                                </div>
+                                <div class="cardBody">
+                                    <h3>Ce projet m'a permis</h3>
+                                    <ul>
+                                        <li>De comprendre la méthodologie de d'analyse des besoins clients</li>
+                                        <li>De recueillir le plus d'information afin de créer un produit optimale</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer id="contact">
+            <a href="#home">
+                <div class="goBack" >
+                    <img src="img/icons8-arrow-up-100.png" alt="">
+                    <h3>Accueil</h3>
+                </div>
+            </a>
+            <div class="contact">
+                <h2>Moyen de contact</h2>
+                <div class="logo">
+                    <a href="https://github.com/SkyalphaBe">
+                        <img src="img/gitHubLogo.svg" alt="">
+                    </a>
+                    <a href="mailto:frsgra28@gmail.com">
+                        <img src="img/mailLogo.png" alt="">
+                    </a>
+                    <a href="https://fr.linkedin.com/in/fran%C3%A7ois-graux-5a0225222">
+                        <img src="img/linkedinLogo.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <a href="file/CV.pdf" download="CV_Graux_François.pdf" id="dlCV">Téléchargement CV</a>
+        </footer>
+    </main>
 </body>
 </html>
