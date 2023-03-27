@@ -159,6 +159,9 @@ a {
   font-size: x-large;
   text-align: justify;
 }
+.moi #obj {
+  margin-top: 20px;
+}
 .moi #titlePassion {
   margin-top: 30px;
 }
@@ -243,6 +246,10 @@ a {
 }
 .card h2 {
   color: var(--green);
+  transition: 0.3s all;
+  border-radius: 15px;
+  padding: 5px;
+  width: fit-content;
 }
 .card img {
   max-height: 100%;
@@ -254,6 +261,9 @@ a {
 }
 .card:hover img {
   filter: grayscale(0%);
+}
+.card:hover h2 {
+  background-color: var(--cream);
 }
 
 .card:hover {
@@ -471,5 +481,66 @@ footer #dlCV:hover {
 }
 
 /*-----------------------------------------------------Media Query----------------------------------------------------------*/
+@media screen and (max-width: 1250px) {
+  .title-content h1 {
+    font-size: 1.2em;
+  }
+  .moi {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #232020;
+    font-family: NeueHaasGrotesk, sans-serif;
+    color: #F0F1E4;
+  }
+  .moi p {
+    font-size: 1.2em;
+    width: fit-content;
+  }
+  .moi h2 {
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 1261px) {
+  .competenceContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .project {
+    justify-content: space-evenly;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    background-color: #232020;
+    font-family: NeueHaasGrotesk, sans-serif;
+    color: #F0F1E4;
+    border-radius: 15px;
+    height: 26em;
+    width: 16em;
+  }
+  .card p {
+    font-size: 0.8em;
+  }
+  .card h1 {
+    font-size: 1.5em;
+  }
+  .card h2 {
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 1216px) {
+  .moi {
+    height: 80vh;
+  }
+}
+@media screen and (max-width: 1125px) {
+  .card {
+    margin-bottom: 10px;
+  }
+}
 
 /*# sourceMappingURL=accueil.css.map */
